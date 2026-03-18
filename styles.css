@@ -39,22 +39,27 @@ main {
 .cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     border-bottom: 1px solid #b9b9b9;
     border-top: 1px solid #b9b9b9;
+    justify-content: space-around;
+    margin: 10px 20px 10px 20px;
     gap: 15px;
-    margin: 20px;
     padding: 20px;
 }
 
 section.chapter article {
-    margin: 20px;
-    padding: 20px;
+    margin: 40px 40px 20px 40px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #b9b9b9;
 }
 
 section.border article {
-    margin: 10px;
+    margin: 0px;
+    border-left: 4px solid rgb(29, 131, 255);
+    border-bottom: 1px solid #b9b9b9;
+    margin-left: 40px;
+    padding-bottom: 20px;
+    padding-left: 10px;
 }
 
 .item {
@@ -67,18 +72,11 @@ section.border article {
     background-color: #fafafa;
     padding: 20px;
     text-align: center;
-}
-
-.border {
-    border-left: 4px solid rgb(29, 131, 255);
-    margin-left: 40px;
-    padding: 5px;
-    margin-bottom: 10px;
-    background-color: #fafafa;
+    border-bottom: 1px solid #b9b9b9;
 }
 
 h2 {
-    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 footer {
