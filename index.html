@@ -1,17 +1,20 @@
 <!doctype html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Компьютерный блог</title>
-    </head>
-    <body>
-        <div>
-            <header>
-                <h1>Компьютерный блог</h1>
-            </header>
 
-            <section>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Компьютерный блог</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Компьютерный блог</h1>
+        </header>
+        <main>
+            <section class="chapter">
                 <article>
                     <h2>Как выбрать процессор?</h2>
                     <p>
@@ -38,10 +41,10 @@
                 </article>
             </section>
 
-            <section>
-                <article>
+            <section class="cards">
+                <article class="product">
                     <h2>Игровой ноутбук X200</h2>
-                    <img src="./assets/laptop.png" alt="Игровой ноутбук X200" />
+                    <img src="./assets/laptop.png" alt="Игровой ноутбук X200" class="item" />
                     <p>
                         Процессор Intel Core i9, видеокарта RTX 4080, 32 ГБ RAM,
                         SSD 1 ТБ. Идеальный вариант для игр и работы с графикой.
@@ -50,11 +53,9 @@
                         процесс.
                     </p>
                 </article>
-                <article>
+                <article class="product">
                     <h2>Монитор 4K UltraView</h2>
-                    <img
-                        src="./assets/monitor.png"
-                        alt="Монитор 4K UltraView" />
+                    <img src="./assets/monitor.png" alt="Монитор 4K UltraView" class="item"/>
                     <p>
                         Разрешение 3840x2160, частота 144 Гц, поддержка HDR.
                         Отличное качество изображения для профессионалов и
@@ -62,11 +63,9 @@
                         обзора и точную цветопередачу.
                     </p>
                 </article>
-                <article>
+                <article class="product">
                     <h2>Клавиатура Mechanica Pro</h2>
-                    <img
-                        src="./assets/keyboard.png"
-                        alt="Клавиатура Mechanica Pro" />
+                    <img src="./assets/keyboard.png" alt="Клавиатура Mechanica Pro" class="item"/>
                     <p>
                         Механические переключатели, RGB-подсветка,
                         программируемые кнопки, удобный дизайн для
@@ -77,7 +76,7 @@
                 </article>
             </section>
 
-            <section>
+            <section class="border">
                 <article>
                     <h2>История первой видеокарты</h2>
                     <p>
@@ -100,10 +99,11 @@
                     </p>
                 </article>
             </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Компьютерный блог. Все права защищены.</p>
+        </footer>
+    </div>
+</body>
 
-            <footer>
-                <p>&copy; 2025 Компьютерный блог. Все права защищены.</p>
-            </footer>
-        </div>
-    </body>
 </html>
